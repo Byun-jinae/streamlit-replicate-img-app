@@ -5,4 +5,4 @@ streamlit-image-select
 openai
 langchain
 langchain_community
-langchain_chroma
+langchain-chroma

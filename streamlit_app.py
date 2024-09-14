@@ -26,6 +26,8 @@ st.set_page_config(page_title="Yam Yam Bot",
 
 st.title("# :rainbow[맛집추천 얌얌봇]")
 
+openai_api_key = st.secrets["openai"]["api_key"]
+
 # OpenAI API 키 설정을 위한 함수
 def init_api():
     with open("chatgpt.env") as env:
@@ -63,8 +65,8 @@ user_question = st.text_input("**먹고 싶은 음식 관련 맛집을 검색해
 if st.button("답변 받기"):
     if user_question:
         # API 초기화 및 키 설정
-        init_api()
-        client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+        
+        client = OpenAI(api_key=openai_api_key)
 
         # API URL로부터 XML 데이터 가져오기
         api_url = "https://openapi.gg.go.kr/Familyrstrt"

@@ -5,5 +5,5 @@ streamlit-image-select
 openai
 langchain
 langchain_community
-langchain-chroma==0.3.29
+langchain-chroma
 protobuf==3.20.0

@@ -4,3 +4,4 @@ requests
 streamlit-image-select
 openai
 langchain
+langchain_community

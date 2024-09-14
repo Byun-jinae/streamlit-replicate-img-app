@@ -1,5 +1,5 @@
 replicate
-streamlit==1.37.0
+streamlit
 requests
 streamlit-image-select
 openai
@@ -8,3 +8,4 @@ langchain_community
 langchain-chroma
 protobuf==3.20.0
 sqlite3 >= 3.35.0
+numpy
